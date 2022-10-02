@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { Team } from './team.entity';
 import { TeamService } from './team.service';
 import { TeamDto } from './team.dto';
@@ -13,7 +13,8 @@ export class TeamController {
   }
 
   @Post()
-  async create(data: TeamDto): Promise<Team[]> {
-    return await this.teamService.create({ data: 'one' });
+  async create(@Body() data: TeamDto): Promise<Team[]> {
+    console.log('data ->', data);
+    return await this.teamService.create(new Team(data));
   }
 }

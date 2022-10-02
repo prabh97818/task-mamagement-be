@@ -11,7 +11,7 @@ abstract class BaseService<EntityClass>
   }
 
   async create(data: any): Promise<EntityClass[]> {
-    return await this._repository.create(data);
+    return await this._repository.save(data);
   }
 
   update(id: any, data: any): Promise<any> {
