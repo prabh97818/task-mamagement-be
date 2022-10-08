@@ -44,7 +44,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
 ## Test
 
 ```bash
@@ -57,6 +56,8 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## API Documentation
+[Click here to view documentation](https://documenter.getpostman.com/view/15572238/2s83zgvQoy)
 
 ## Support
 
@@ -71,5 +72,3 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
-
-## Teams Module
