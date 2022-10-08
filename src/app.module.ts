@@ -7,6 +7,9 @@ import { TeamMemberModule } from './modules/team-member/team-member.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { ServicesModule } from './core/services/services.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { ProjectModule } from './modules/project/project.module';
+import { TaskModule } from './modules/task/task.module';
 
 @Module({
   imports: [
@@ -23,6 +26,9 @@ import { ServicesModule } from './core/services/services.module';
     TeamModule,
     TeamMemberModule,
     ServicesModule,
+    AuthModule,
+    ProjectModule,
+    TaskModule,
   ],
   controllers: [AppController],
   providers: [AppService],
