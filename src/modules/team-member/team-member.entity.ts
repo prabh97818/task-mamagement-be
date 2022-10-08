@@ -8,9 +8,9 @@ export class TeamMember {
   @Column() firstName: string;
   @Column() lastName: string;
   @Column() email: string;
-  @Column() teams: ObjectID[];
+  @ObjectIdColumn() teams: ObjectID[];
 
-  constructor(team?: Partial<TeamMember>) {
-    Object.assign(this, team);
+  constructor(teamMember?: Partial<TeamMember>) {
+    Object.assign(this, teamMember);
   }
 }
